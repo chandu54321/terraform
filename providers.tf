@@ -8,5 +8,5 @@ terraform {
 }
 
 provider "aws" {
-  # Configuration options
+  region = "ap-south-1"  # Ensure this is a valid AWS region
 }
