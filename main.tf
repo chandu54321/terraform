@@ -1,6 +1,4 @@
-resource "aws_vpc" "my_vpc" {
-  cidr_block = "10.0.0.0/16"  # Define the CIDR block for the VPC
-  tags = {
-    Name = "MyVPC"
-  }
+resource "azurerm_resource_group" "rg" {
+  name     = "myTFResourceGroup"
+  location = "West US 2"
 }

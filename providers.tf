@@ -1,12 +1,12 @@
 terraform {
   required_providers {
-    aws = {
-      source = "hashicorp/aws"
-      version = "5.74.0"
+    azurerm = {
+      source  = "hashicorp/azurerm"
+      version = "~> 3.0"
     }
   }
 }
 
-provider "aws" {
-  region = "ap-south-1"  # Ensure this is a valid AWS region
+provider "azurerm" {
+  features {}
 }
